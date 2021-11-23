@@ -7,6 +7,26 @@ import Home from '../Home/Home';
 
 
 const App = () => {
+
+  const [merkisThings] = useState([
+    {
+      name: "Switzerland",
+      image: "https://www.expatica.com/app/uploads/sites/9/2017/07/cost-of-living-thun.jpg",
+      attributes: ["Clearn", "Picturesque", "Expensive", "Public Drinking"]
+      
+    },
+    {
+      name: "History",
+      image: "https://s7d2.scene7.com/is/image/Kennametal/History?$MobileBanner$&",
+      attributes: ["Interesting","Informative","Blueprint for future"]
+    },
+    {
+      name: "Podcasts",
+      image: "https://yt3.ggpht.com/ytc/AKedOLS2KcFQ2ddXLYVpxbXNVqf7nsi0NWg4_R4HqKIl=s900-c-k-c0x00ffffff-no-rj",
+      attributes: ["Fun","Inspiring","Uplifting"]
+    }
+  ])
+
   const [davidsThings] = useState([
     {
       name: "waffle",
@@ -56,6 +76,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>} />
         {/* All the <Route> components should live here */}
+        <Route path='/the-merkis-things' element={<FunctionalThings things={merkisThings} />} />
         <Route path='/the-functional-things' element={<FunctionalThings things={shahzadsThings} />} />
         <Route path='/the-well-styled-things' element={<StyledThings things={davidsThings} />} />
       </Routes>
