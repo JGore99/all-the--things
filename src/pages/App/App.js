@@ -15,7 +15,7 @@ const App = () => {
     {
       name: "Switzerland",
       image: "https://www.expatica.com/app/uploads/sites/9/2017/07/cost-of-living-thun.jpg",
-      attributes: ["Clearn", "Picturesque", "Expensive", "Public Drinking"]
+      attributes: ["Clean", "Picturesque", "Expensive", "Public Drinking"]
       
     },
     {
@@ -34,17 +34,17 @@ const App = () => {
     {
       name: "records",
       image: "https://images.unsplash.com/photo-1605055510925-4c9626126167?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
-      attributes: ["record stacks"],
+      attributes: ["heavy", "impractical", "outdated", "fun!"],
     },
     {
       name: "dogs",
       image: "https://images.unsplash.com/photo-1598133894008-61f7fdb8cc3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
-      attributes: ["dog"],
+      attributes: ["loyal", "companions", "buddies!", "super cute"],
     },
     {
       name: "cocktails",
       image: "https://images.unsplash.com/photo-1568644396922-5c3bfae12521?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-      attributes: ["drinks"],
+      attributes: ["history", "culture", "inventive", "tasty", "also fun!"],
     },
 
   ])
