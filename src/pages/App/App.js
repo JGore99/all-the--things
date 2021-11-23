@@ -1,12 +1,32 @@
 import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom'
 import './App.css';
+import JeffThings from '../JeffThings/JeffThings'
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
 import Home from '../Home/Home';
 
 
 const App = () => {
+
+  const [jeffsThings] = useState([
+    {
+      name: "records",
+      image: "https://images.unsplash.com/photo-1605055510925-4c9626126167?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+      attributes: ["record stacks"],
+    },
+    {
+      name: "dogs",
+      image: "https://images.unsplash.com/photo-1598133894008-61f7fdb8cc3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+      attributes: ["dog"],
+    },
+    {
+      name: "cocktails",
+      image: "https://images.unsplash.com/photo-1568644396922-5c3bfae12521?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      attributes: ["drinks"],
+    },
+  ])
+
   const [davidsThings] = useState([
     {
       name: "waffle",
@@ -56,6 +76,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>} />
         {/* All the <Route> components should live here */}
+        <Route path='/the-jeff-things' element={<JeffThings things={jeffsThings} />} />
         <Route path='/the-functional-things' element={<FunctionalThings things={shahzadsThings} />} />
         <Route path='/the-well-styled-things' element={<StyledThings things={davidsThings} />} />
       </Routes>
