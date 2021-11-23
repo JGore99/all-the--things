@@ -9,8 +9,9 @@ const Home = (props) => {
       <h1>All-The-Things</h1>
       <Link to="/the-functional-things">Shahzad's Things</Link><br/>
       <Link to="/the-well-styled-things">David's Things</Link><br/>
+      <Link to ="/epic-things"> Darby's Things</Link>
     </>
   );
 }
- 
+
 export default Home;

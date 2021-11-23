@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css';
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
+import EpicThings from '../EpicThings/EpicThings';
 import Home from '../Home/Home';
 
 
@@ -51,6 +52,19 @@ const App = () => {
       attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
     },
   ])
+  const [darbysThings] = useState ([
+    {
+      name: "The Witcher",
+      image: "https://images.unsplash.com/photo-1622643048696-883eafe4d8dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1227&q=80",
+      attributes: ["epic fantasy", "toss a coin to your witcher", "magic", "golden dragons", "Yennefer"]
+    }, 
+    {
+      name: "Cats",
+      image: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+      attributes: ["meow", "fluffy", "evil-cute"]
+    }, 
+  ])
+
   return (
     <>
       <Routes>
@@ -58,9 +72,10 @@ const App = () => {
         {/* All the <Route> components should live here */}
         <Route path='/the-functional-things' element={<FunctionalThings things={shahzadsThings} />} />
         <Route path='/the-well-styled-things' element={<StyledThings things={davidsThings} />} />
+        <Route path ="/epic-things" element={<EpicThings things={darbysThings} />} />
       </Routes>
     </>
   );
 }
- 
+
 export default App;
